@@ -173,4 +173,9 @@ Get All Sensors
 - Postman-коллекция: [`apps/smarthome-api.postman_collection.json`](./apps/smarthome-api.postman_collection.json)
 
 
-**Конец шаблона.**
+**Команды запуска/проверки:**
+
+cd apps
+docker compose up --build -d
+# проверка
+curl http://localhost:8081/temperature?location=living-room
